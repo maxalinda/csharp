@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace csharp.tests
 {
+
     [TestFixture]
     class MathFuncTests
     {
@@ -53,5 +54,6 @@ namespace csharp.tests
             int expected = 4;
             Assert.AreEqual(expected, math.Division(a, b));
         }
+
     }
 }
