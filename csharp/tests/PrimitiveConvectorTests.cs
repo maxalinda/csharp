@@ -14,10 +14,18 @@ namespace csharp.tests
 
         //FLOAT TO CHAR====================================================
         [Test]
+        public void floatToCharTestType()
+        {
+            float test = 3.1489F;
+            char result = convector.floatToChar(test);         
+            Assert.IsInstanceOf<Char>(result);
+        }
+        [Test]
         public void floatToCharTest() {
            float test = 3.1489F;
            char result = convector.floatToChar(test);
-           Assert.AreEqual('\u0003', result);          
+           Assert.AreEqual('\u0003', result);
+           Assert.IsInstanceOf<Char>(result);       
         }
         [Test]
         public void floatToCharTest2()
@@ -42,6 +50,13 @@ namespace csharp.tests
         }
 
         //INT TO CHAR===============================================================
+        [Test]
+        public void intToCharTestType()
+        {
+            int test = 1488;
+            char result = convector.intToChar(test);
+            Assert.IsInstanceOf<Char>(result);
+        }
         [Test]
         public void intToCharTest()
         {
@@ -72,6 +87,13 @@ namespace csharp.tests
         }
 
         //CHAR TO INT================================================================
+        [Test]
+        public void charToIntTestType()
+        {
+            char test = 'א';
+            int result = convector.charToInt(test);
+            Assert.IsInstanceOf<Int32>(result);
+        }
         [Test]
         public void charToIntTest()
         {
@@ -146,77 +168,84 @@ namespace csharp.tests
 
         //DOUBLE TO INT=====================================================
         [Test]
-        public void doubleToInt()
+        public void doubleToIntTestType()
+        {
+            double test = 25.34;
+            int result = convector.doubleToInt(test);
+            Assert.IsInstanceOf<Int32>(result);
+        }
+        [Test]
+        public void doubleToIntTest()
         {
             double test = 25.34;
             int result = convector.doubleToInt(test);
             Assert.AreEqual(25, result);
         }
         [Test]
-        public void doubleToInt2()
+        public void doubleToIntTest2()
         {
             double test = 25.34;
             int result = convector.doubleToInt(test);
             Assert.AreNotEqual(9090, result);
         }
         [Test]
-        public void doubleToInt3()
+        public void doubleToIntTest3()
         {
             double test = 25.34;
             int result = convector.doubleToInt(test);
             Assert.AreNotSame(test, result);
         }
         [Test]
-        public void doubleToInt4()
+        public void doubleToIntTest4()
         {
             double test = 25.34;
             int result = convector.doubleToInt(test);
             Assert.IsNotNull(result);
         }
         [Test]
-        public void doubleToInt5()
+        public void doubleToIntTest5()
         {
             double test = 25.34;
             int result = convector.doubleToInt(test);
             Assert.Greater(result, 1);
         }
         [Test]
-        public void doubleToInt6()
+        public void doubleToIntTest6()
         {
             double test = 25.34;
             int result = convector.doubleToInt(test);
             Assert.GreaterOrEqual(result, 25);
         }
         [Test]
-        public void doubleToInt7()
+        public void doubleToIntTest7()
         {
             double test = 25.34;
             int result = convector.doubleToInt(test);
             Assert.Less(result, 100);
         }
         [Test]
-        public void doubleToInt8()
+        public void doubleToIntTest8()
         {
             double test = 25.34;
             int result = convector.doubleToInt(test);
             Assert.LessOrEqual(result, 25);
         }
         [Test]
-        public void doubleToInt9()
+        public void doubleToIntTest9()
         {
             double test = 25.34;
             int result = convector.doubleToInt(test);
             Assert.Positive(result);
         }
         [Test]
-        public void doubleToInt10()
+        public void doubleToIntTest10()
         {
             double test = -25.34;
             int result = convector.doubleToInt(test);
             Assert.Negative(result);
         }
         [Test]
-        public void doubleToInt11()
+        public void doubleToIntTest11()
         {
             double test = 25.34;
             int result = convector.doubleToInt(test);
