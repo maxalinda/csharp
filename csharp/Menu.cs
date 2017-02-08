@@ -18,26 +18,26 @@ namespace csharp
             Console.WriteLine("== 4. Calculate cicle area.              ==");
             Console.WriteLine("===========================================");
 
-            int menuNumber = Convert.ToInt32(Console.ReadLine());
+            string menuNumber = Console.ReadLine();
 
             programSelect(menuNumber);
 
         }
 
-        public static void programSelect(int menuNumber) {
-            if (menuNumber == 1)
+        public static void programSelect(string menuNumber) {
+            if (menuNumber == "1")
             {
                 DefineNumber.evenOrOdd();
             }
-            else if (menuNumber == 2)
+            else if (menuNumber == "2")
             {
                 TriangleCalculation.isTriangleRightAngled();
             }
-            else if (menuNumber == 3)
+            else if (menuNumber == "3")
             {
                 CircleArea.CalculateBiggerCicleArea();
             }
-            else if (menuNumber == 4)
+            else if (menuNumber == "4")
             {
                 CircleRadius.CalculateCicleArea();
             }
