@@ -47,6 +47,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CircleArea.cs" />
+    <Compile Include="CircleRadius.cs" />
+    <Compile Include="DefineNumber.cs" />
+    <Compile Include="Menu.cs" />
     <Compile Include="NarrowingCasting.cs" />
     <Compile Include="PrimitiveConvector.cs" />
     <Compile Include="Program.cs" />
@@ -54,6 +58,7 @@
     <Compile Include="tests\MathFunc.cs" />
     <Compile Include="tests\MathFuncTests.cs" />
     <Compile Include="tests\PrimitiveConvectorTests.cs" />
+    <Compile Include="TriangleCalculation.cs" />
     <Compile Include="WideningCasting.cs" />
   </ItemGroup>
   <ItemGroup>

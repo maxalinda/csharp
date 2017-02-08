@@ -10,7 +10,10 @@ namespace csharp
     {
         static void Main(string[] args)
         {
-
+            Menu.programMenu();           
+            
+           
+            //Lesson2
             WideningCasting wideningCasting = new WideningCasting();
             wideningCasting.Conversion();
             Console.ReadLine();

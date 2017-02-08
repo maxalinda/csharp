@@ -171,7 +171,7 @@ namespace csharp.tests
         public void doubleToIntTestType()
         {
             double test = 25.34;
-            int result = convector.doubleToInt(test);
+            int result = convector.doubleToInt(test);            
             Assert.IsInstanceOf<Int32>(result);
         }
         [Test]
