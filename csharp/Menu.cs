@@ -9,16 +9,17 @@ namespace csharp
     class Menu
     {
         public static void programMenu() {
-            Console.WriteLine("                                                           NextGen Production v.1.01");
-            Console.WriteLine("Select program number end press ENTER.");          
-            Console.WriteLine("Menu:");
-            Console.WriteLine("===========================================");
-            Console.WriteLine("== 1. Odd or Even analizator.            ==");
-            Console.WriteLine("== 2. Is Triangle right-angled debugger. ==");
-            Console.WriteLine("== 3. Calculate bigger cicle area.       ==");
-            Console.WriteLine("== 4. Calculate cicle area.              ==");
-            Console.WriteLine("== 0. Exit                               ==");
-            Console.WriteLine("===========================================");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("              NextGen Production v.1.01");
+            Console.WriteLine("        Select program number end press ENTER.");          
+            Console.WriteLine("        Menu:");            
+            Console.WriteLine("        ===========================================");
+            Console.WriteLine("        == 1. Odd or Even analizator.            ==");
+            Console.WriteLine("        == 2. Is Triangle right-angled debugger. ==");
+            Console.WriteLine("        == 3. Calculate bigger cicle area.       ==");
+            Console.WriteLine("        == 4. Calculate cicle area.              ==");
+            Console.WriteLine("        == 0. Exit                               ==");
+            Console.WriteLine("        ===========================================");
 
             string menuNumber = Console.ReadLine();
 
@@ -32,7 +33,24 @@ namespace csharp
                 Console.Clear();
                 Console.WriteLine("Type any Integer Number ");
                 string number = Console.ReadLine();
-                DefineNumber.evenOrOdd(number);
+                string result = DefineNumber.evenOrOdd(number);
+                if (result == "WrongData")
+                {
+                    Console.WriteLine("Seems like You type wrong data type. Press Enter to continue.");
+                    Console.ReadLine();
+                    Menu.programMenu();
+                }
+                else if (result == "isEven") {
+                    Console.WriteLine("NumberYou Type - " + number + "  is EVEN.");
+                    Console.ReadLine();
+                    Menu.programMenu();
+                }
+                else if (result == "isOdd") {
+                    Console.WriteLine("NumberYou Type - " + number + "  is ODD.");
+                    Console.ReadLine();
+                    Menu.programMenu();
+                }
+
             }
             else if (menuNumber == "2")
             {

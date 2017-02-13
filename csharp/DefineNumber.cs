@@ -10,32 +10,22 @@ namespace csharp
     class DefineNumber
     {
 
-        public static Boolean evenOrOdd(string myNumber) {
+        public static string evenOrOdd(string myNumber) {
             Regex reg = new Regex("^[0-9]*$");
             if (!reg.IsMatch(myNumber))
-            {
-                Console.WriteLine("Seems like You type wrong data type. Press Enter to continue.");
-                Console.ReadLine();
-                Menu.programMenu();
-                return false;
+            {               
+                return "WrongData";
             }
             double myNumb = Convert.ToDouble(myNumber);
             bool isEven = DefineNumber.isEven(myNumb);
 
             if (isEven)
-            {
-                Console.WriteLine("NumberYou Type - " + myNumber + "  is EVEN.");
-                Console.ReadLine();
-                Menu.programMenu();
-                return true;
+            {              
+                return "isEven";
             }
             else
-            {
-                Console.WriteLine("NumberYou Type - " + myNumber + "  is ODD.");
-                Console.ReadLine();
-                Menu.programMenu();
-                return false;
-                
+            {              
+                return "isOdd";                
             }
            
         }

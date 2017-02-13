@@ -57,6 +57,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="tests\MathFunc.cs" />
     <Compile Include="tests\MathFuncTests.cs" />
+    <Compile Include="tests\MenuTests.cs" />
     <Compile Include="tests\PrimitiveConvectorTests.cs" />
     <Compile Include="TriangleCalculation.cs" />
     <Compile Include="WideningCasting.cs" />
