@@ -17,7 +17,7 @@ namespace csharp
             {
                 Console.WriteLine("Seems like You type wrong data type. Press Enter to continue.");
                 Console.ReadLine();
-                Menu.programMenu();
+                Lesson04Menu.programMenu();
                 return "Error type";               
             }
 
@@ -31,19 +31,19 @@ namespace csharp
             {
                 Console.WriteLine("Area1 is bigger");
                 Console.ReadLine();
-                Menu.programMenu();
+                Lesson04Menu.programMenu();
                 return "Area1";
             }
             else if (area1 == area2) {
                 Console.WriteLine("Area1 is equal to Area2");
                 Console.ReadLine();
-                Menu.programMenu();
+                Lesson04Menu.programMenu();
                 return "Areas are equal";
             }
             else {
                 Console.WriteLine("Area2 is bigger");
                 Console.ReadLine();
-                Menu.programMenu();
+                Lesson04Menu.programMenu();
                 return "Area2";
             }
         }

@@ -50,7 +50,7 @@
     <Compile Include="main\classwork\lesson04\CircleArea.cs" />
     <Compile Include="main\classwork\lesson04\CircleRadius.cs" />
     <Compile Include="main\classwork\lesson04\DefineNumber.cs" />
-    <Compile Include="main\menus\Menu.cs" />
+    <Compile Include="main\menus\Leson04Menu.cs" />
     <Compile Include="main\classwork\lesson02\NarrowingCasting.cs" />
     <Compile Include="main\homework\lesson02\PrimitiveConvector.cs" />
     <Compile Include="Program.cs" />

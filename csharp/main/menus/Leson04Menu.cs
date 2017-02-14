@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace csharp
 {
-    class Menu
+    class Lesson04Menu
     {
         public static void programMenu() {
             Console.ForegroundColor = ConsoleColor.Cyan;
@@ -38,17 +38,17 @@ namespace csharp
                 {
                     Console.WriteLine("Seems like You type wrong data type. Press Enter to continue.");
                     Console.ReadLine();
-                    Menu.programMenu();
+                    programMenu();
                 }
                 else if (result == "isEven") {
                     Console.WriteLine("NumberYou Type - " + number + "  is EVEN.");
                     Console.ReadLine();
-                    Menu.programMenu();
+                    programMenu();
                 }
                 else if (result == "isOdd") {
                     Console.WriteLine("NumberYou Type - " + number + "  is ODD.");
                     Console.ReadLine();
-                    Menu.programMenu();
+                    programMenu();
                 }
 
             }

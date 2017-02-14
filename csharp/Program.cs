@@ -10,7 +10,7 @@ namespace csharp
     {
         static void Main(string[] args)
         {
-            Menu.programMenu();           
+            Lesson04Menu.programMenu();           
 
 
             ////Lesson2

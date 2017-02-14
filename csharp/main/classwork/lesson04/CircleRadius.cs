@@ -17,7 +17,7 @@ namespace csharp
             {
                 Console.WriteLine("Seems like You type wrong data type. Press Enter to continue.");
                 Console.ReadLine();
-                Menu.programMenu();
+                Lesson04Menu.programMenu();
                 return "Error type";
             }
             radius = Convert.ToDouble(r);           
@@ -25,7 +25,7 @@ namespace csharp
             circleArea =    pi * radius * radius;
             Console.WriteLine("Area is " + circleArea);
             Console.ReadLine();
-            Menu.programMenu();
+            Lesson04Menu.programMenu();
             return "Done";
         }
     }

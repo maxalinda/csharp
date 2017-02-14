@@ -15,7 +15,7 @@ namespace csharp
             {
                 Console.WriteLine("Seems like You type wrong data type. Press Enter to continue.");
                 Console.ReadLine();
-                Menu.programMenu();
+                Lesson04Menu.programMenu();
                 return false;
             }
 
@@ -32,14 +32,14 @@ namespace csharp
             {
                 Console.WriteLine("Triangle is right-angled");
                 Console.ReadLine();
-                Menu.programMenu();
+                Lesson04Menu.programMenu();
                 return true;
             }
             else
             {
                 Console.WriteLine("Not right-angled triagle");
                 Console.ReadLine();
-                Menu.programMenu();
+                Lesson04Menu.programMenu();
                 return false;
             }
         }
