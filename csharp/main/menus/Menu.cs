@@ -10,7 +10,7 @@ namespace csharp
     {
         public static void programMenu() {
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine("              NextGen Production v.1.01");
+            Console.WriteLine("              NextGen Production v.1.03");
             Console.WriteLine("        Select program number end press ENTER.");          
             Console.WriteLine("        Menu:");            
             Console.WriteLine("        ===========================================");

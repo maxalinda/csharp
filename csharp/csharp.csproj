@@ -47,20 +47,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CircleArea.cs" />
-    <Compile Include="CircleRadius.cs" />
-    <Compile Include="DefineNumber.cs" />
-    <Compile Include="Menu.cs" />
-    <Compile Include="NarrowingCasting.cs" />
-    <Compile Include="PrimitiveConvector.cs" />
+    <Compile Include="main\classwork\lesson04\CircleArea.cs" />
+    <Compile Include="main\classwork\lesson04\CircleRadius.cs" />
+    <Compile Include="main\classwork\lesson04\DefineNumber.cs" />
+    <Compile Include="main\menus\Menu.cs" />
+    <Compile Include="main\classwork\lesson02\NarrowingCasting.cs" />
+    <Compile Include="main\homework\lesson02\PrimitiveConvector.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="tests\MathFunc.cs" />
-    <Compile Include="tests\MathFuncTests.cs" />
-    <Compile Include="tests\MenuTests.cs" />
-    <Compile Include="tests\PrimitiveConvectorTests.cs" />
-    <Compile Include="TriangleCalculation.cs" />
-    <Compile Include="WideningCasting.cs" />
+    <Compile Include="main\classwork\lesson03\MathFunc.cs" />
+    <Compile Include="tests\homework\lesson03\MathFuncTests.cs" />
+    <Compile Include="tests\homework\lesson04\MenuTests.cs" />
+    <Compile Include="tests\homework\lesson02\PrimitiveConvectorTests.cs" />
+    <Compile Include="main\classwork\lesson04\TriangleCalculation.cs" />
+    <Compile Include="main\classwork\lesson02\WideningCasting.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -68,6 +68,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="tests\classwork\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

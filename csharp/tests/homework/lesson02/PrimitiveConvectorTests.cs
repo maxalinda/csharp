@@ -84,7 +84,7 @@ namespace csharp.tests
             int test = -28;
             char result = convector.intToChar(test);
             Assert.IsNotNull(result);
-        }
+        }  
 
         //CHAR TO INT================================================================
         [Test]
