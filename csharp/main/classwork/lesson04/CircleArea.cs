@@ -12,13 +12,10 @@ namespace csharp
         public const double PI = 3.14d;
 
         public static String CalculateBiggerCicleArea(string r1, string r2) {
-            Regex reg = new Regex("^[0-9].*$");
-            if (!reg.IsMatch(r1) || !reg.IsMatch(r2))
-            {
-                Console.WriteLine("Seems like You type wrong data type. Press Enter to continue.");
-                Console.ReadLine();
-                Lesson04Menu.programMenu();
-                return "Error type";               
+            Regex reg = new Regex("^[0-9]([.][0-9]{1,3})?$");
+            if (!reg.IsMatch(r1) || !reg.IsMatch(r2)) 
+            {               
+                return "WrongData";               
             }
 
             double r1Double = Convert.ToDouble(r1);
@@ -28,22 +25,14 @@ namespace csharp
             double area2 = PI * r2Double * r2Double;
 
             if (area1 > area2)
-            {
-                Console.WriteLine("Area1 is bigger");
-                Console.ReadLine();
-                Lesson04Menu.programMenu();
+            {                
                 return "Area1";
             }
-            else if (area1 == area2) {
-                Console.WriteLine("Area1 is equal to Area2");
-                Console.ReadLine();
-                Lesson04Menu.programMenu();
-                return "Areas are equal";
+            else if (area1 == area2)
+            {               
+                return "AreasEqual";
             }
-            else {
-                Console.WriteLine("Area2 is bigger");
-                Console.ReadLine();
-                Lesson04Menu.programMenu();
+            else {                
                 return "Area2";
             }
         }

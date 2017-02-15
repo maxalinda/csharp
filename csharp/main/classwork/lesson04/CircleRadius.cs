@@ -11,22 +11,16 @@ namespace csharp
     {
         static double radius, circleArea;       
 
-        public static string CalculateCicleArea(string r, double pi) {
-            Regex reg = new Regex("^[0-9].*$");
+        public static double CalculateCicleArea(string r, double pi) {
+            Regex reg = new Regex("^[0-9]([.][0-9]{1,3})?$");
             if (!reg.IsMatch(r))
-            {
-                Console.WriteLine("Seems like You type wrong data type. Press Enter to continue.");
-                Console.ReadLine();
-                Lesson04Menu.programMenu();
-                return "Error type";
+            {               
+                return 1.0403;
             }
             radius = Convert.ToDouble(r);           
 
-            circleArea =    pi * radius * radius;
-            Console.WriteLine("Area is " + circleArea);
-            Console.ReadLine();
-            Lesson04Menu.programMenu();
-            return "Done";
+            circleArea =    pi * radius * radius;            
+            return circleArea;
         }
     }
 }

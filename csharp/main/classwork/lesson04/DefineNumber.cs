@@ -11,7 +11,7 @@ namespace csharp
     {
 
         public static string evenOrOdd(string myNumber) {
-            Regex reg = new Regex("^[0-9]*$");
+            Regex reg = new Regex("^[0-9]([.][0-9]{1,3})?$");
             if (!reg.IsMatch(myNumber))
             {               
                 return "WrongData";

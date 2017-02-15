@@ -63,7 +63,26 @@ namespace csharp
                 string c = Console.ReadLine();
 
                 TriangleCalculation tri = new TriangleCalculation();
-                tri.isTriangleRightAngled(a, b, c);
+                string result = tri.isTriangleRightAngled(a, b, c);
+
+                if (result == "WrongData")
+                {
+                    Console.WriteLine("Seems like You type wrong data type. Press Enter to continue.");
+                    Console.ReadLine();
+                    programMenu();
+                }
+                else if (result == "RightAngle")
+                {
+                    Console.WriteLine("Triangle is right-angled");
+                    Console.ReadLine();
+                    programMenu();
+                }
+                else if (result == "NotRightAngle")
+                {
+                    Console.WriteLine("Not right-angled triagle");
+                    Console.ReadLine();
+                    programMenu();
+                }
             }
             else if (menuNumber == "3")
             {
@@ -73,7 +92,32 @@ namespace csharp
 
                 Console.WriteLine("Enter radius 2 ");
                 string r2 = Console.ReadLine();
-                CircleArea.CalculateBiggerCicleArea(r1, r2);
+                string result = CircleArea.CalculateBiggerCicleArea(r1, r2);
+
+                if (result == "WrongData")
+                {
+                    Console.WriteLine("Seems like You type wrong data type. Press Enter to continue.");
+                    Console.ReadLine();
+                    programMenu();
+                }
+                else if (result == "Area1")
+                {
+                    Console.WriteLine("Area1 is bigger");
+                    Console.ReadLine();
+                    programMenu();
+                }
+                else if (result == "AreasEqual")
+                {
+                    Console.WriteLine("Area1 is equal to Area2");
+                    Console.ReadLine();
+                    programMenu();
+                }
+                else if (result == "Area2")
+                {
+                    Console.WriteLine("Area2 is bigger");
+                    Console.ReadLine();
+                    programMenu();
+                }
             }
             else if (menuNumber == "4")
             {
@@ -81,7 +125,20 @@ namespace csharp
                 Console.WriteLine("Type radius value: ");
                 string r = Console.ReadLine();
                 double pi = 3.14;
-                CircleRadius.CalculateCicleArea(r, pi);
+                double result = CircleRadius.CalculateCicleArea(r, pi);
+
+                if (result == 1.0403)
+                {
+                    Console.WriteLine("Seems like You type wrong data type. Press Enter to continue.");
+                    Console.ReadLine();
+                    programMenu();
+                }
+                else 
+                {
+                    Console.WriteLine("Area is " + result);
+                    Console.ReadLine();
+                    Lesson04Menu.programMenu();
+                }
             }
             else if (menuNumber == "0") {
                 exitMenu();

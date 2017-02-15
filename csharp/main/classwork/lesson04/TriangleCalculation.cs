@@ -9,14 +9,11 @@ namespace csharp
 {
     class TriangleCalculation
     {
-        public Boolean isTriangleRightAngled(string a, string b, string c) {
-            Regex reg = new Regex("^[0-9]*$");
+        public String isTriangleRightAngled(string a, string b, string c) {
+            Regex reg = new Regex("^[0-9]([.][0-9]{1,3})?$");
             if (!reg.IsMatch(a) || !reg.IsMatch(b) || !reg.IsMatch(c))
-            {
-                Console.WriteLine("Seems like You type wrong data type. Press Enter to continue.");
-                Console.ReadLine();
-                Lesson04Menu.programMenu();
-                return false;
+            {                
+                return "WrongData";
             }
 
             double sideA = Convert.ToDouble(a);
@@ -29,18 +26,12 @@ namespace csharp
             double c2 = Math.Pow(sideC, 2);
 
             if (c2 > 0 && b2 > 0 && a2 > 0 && c2 == a2 + b2 || a2 == b2 + c2 || b2 == a2 + c2)
-            {
-                Console.WriteLine("Triangle is right-angled");
-                Console.ReadLine();
-                Lesson04Menu.programMenu();
-                return true;
+            {               
+                return "RightAngle";
             }
             else
-            {
-                Console.WriteLine("Not right-angled triagle");
-                Console.ReadLine();
-                Lesson04Menu.programMenu();
-                return false;
+            {              
+                return "NotRightAngle";
             }
         }
     }
