@@ -4,19 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace csharp
+namespace csharp.main.menus
 {
-    class Lesson04Menu
+    class Lesson06ArrayMenu
     {
-        public static void programMenu() {
+        public static void programMenu()
+        {
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine("              NextGen Production v.1.03");
-            Console.WriteLine("        Select program number end press ENTER.");          
-            Console.WriteLine("        Menu:");            
+            Console.WriteLine("              NextGen Production v.1.06");
+            Console.WriteLine("        Select Home Tak number end press ENTER.");
+            Console.WriteLine("        Menu:");
             Console.WriteLine("        ===========================================");
-            Console.WriteLine("        == 1. Odd or Even analizator.            ==");
-            Console.WriteLine("        == 2. Is Triangle right-angled debugger. ==");
-            Console.WriteLine("        == 3. Calculate bigger cicle area.       ==");
+            Console.WriteLine("        == 1. Task 01                            ==");
+            Console.WriteLine("        == Create array with even numbers from 2 to 20. Write them in line using spaces, and then in column ==");
+            Console.WriteLine("        == 2. Task 02                            ==");
+            Console.WriteLine("        == Create array with odd numbers from 1 to 99. Write them in line using spaces, after write array in line by desc order ==");
+            Console.WriteLine("        == 3. Task 03                            ==");
+            Console.WriteLine("        == Create array with 15 random number in range [0. 9]. Write array in line. Calculate how much even numbers are in array and write the count of it. ==");
             Console.WriteLine("        == 4. Calculate cicle area.              ==");
             Console.WriteLine("        == 0. Exit                               ==");
             Console.WriteLine("        ===========================================");
@@ -27,30 +31,13 @@ namespace csharp
 
         }
 
-        public static void programSelect(string menuNumber) {
+        public static void programSelect(string menuNumber)
+        {
             if (menuNumber == "1")
             {
                 Console.Clear();
-                Console.WriteLine("Type any Integer Number ");
-                string number = Console.ReadLine();
-                string result = DefineNumber.evenOrOdd(number);
-                if (result == "WrongData")
-                {
-                    Console.WriteLine("Seems like You type wrong data type. Press Enter to continue.");
-                    Console.ReadLine();
-                    programMenu();
-                }
-                else if (result == "isEven") {
-                    Console.WriteLine("NumberYou Type - " + number + "  is EVEN.");
-                    Console.ReadLine();
-                    programMenu();
-                }
-                else if (result == "isOdd") {
-                    Console.WriteLine("NumberYou Type - " + number + "  is ODD.");
-                    Console.ReadLine();
-                    programMenu();
-                }
 
+            
             }
             else if (menuNumber == "2")
             {
@@ -132,14 +119,15 @@ namespace csharp
                     Console.ReadLine();
                     programMenu();
                 }
-                else 
+                else
                 {
                     Console.WriteLine("Area is " + result);
                     Console.ReadLine();
                     Lesson04Menu.programMenu();
                 }
             }
-            else if (menuNumber == "0") {
+            else if (menuNumber == "0")
+            {
                 exitMenu();
             }
             else
@@ -148,12 +136,13 @@ namespace csharp
                 Console.ReadLine();
                 programMenu();
             }
-            
+
         }
         public static void exitMenu()
         {
-           
+
         }
 
     }
 }
+

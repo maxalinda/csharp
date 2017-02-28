@@ -1,4 +1,6 @@
-﻿using System;
+﻿using csharp.main.classwork.lesson06;
+using csharp.main.homework.lesson06;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +12,21 @@ namespace csharp
     {
         static void Main(string[] args)
         {
-            Lesson04Menu.programMenu();           
+            Lesson06Homework hom = new Lesson06Homework();
+            hom.Task03();
+
+             
+            //ArrayLesson ara = new ArrayLesson();
+            //ara.Multi();
+         
+            //ara.BoolArray();
+            //ara.CharArray();
+            //ara.DoubleArray();
+            //ara.IntArray();
+            //ara.LongArray();
+            //Console.ReadLine();
+
+           // Lesson04Menu.programMenu();           
 
 
             ////Lesson2

@@ -50,9 +50,13 @@
     <Compile Include="main\classwork\lesson04\CircleArea.cs" />
     <Compile Include="main\classwork\lesson04\CircleRadius.cs" />
     <Compile Include="main\classwork\lesson04\DefineNumber.cs" />
+    <Compile Include="main\classwork\lesson06\ArrayLesson.cs" />
+    <Compile Include="main\classwork\lesson06\Lesson06Class.cs" />
+    <Compile Include="main\homework\lesson06\Lesson06Homework.cs" />
     <Compile Include="main\menus\Leson04Menu.cs" />
     <Compile Include="main\classwork\lesson02\NarrowingCasting.cs" />
     <Compile Include="main\homework\lesson02\PrimitiveConvector.cs" />
+    <Compile Include="main\menus\Lesson06ArrayMenu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="main\classwork\lesson03\MathFunc.cs" />
@@ -61,6 +65,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="test\classwork\lesson05\ParametrizedTests.cs" />
     <Compile Include="test\classwork\lesson05\TestCaseWithPreconditions.cs" />
     <Compile Include="test\homework\lesson03\MathFuncTests.cs" />
     <Compile Include="test\homework\lesson04\Lesson04MenuTest.cs" />
