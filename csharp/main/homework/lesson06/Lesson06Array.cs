@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace csharp.main.homework.lesson06
 {
-    class Lesson06Homework
+    class Lesson06Array
     {
         public void Task01()
         {
@@ -93,5 +93,26 @@ namespace csharp.main.homework.lesson06
             Console.WriteLine("The smallest number in array is " + array.Min());
             Console.ReadLine();
         }
+        public void Task05() {
+            int[,] array = new int[8, 5];
+            Random r = new Random();
+
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    int even = r.Next(10, 99);
+                    if (even % 2 == 0)
+                    {
+                        array[i, j] = even;
+                    }
+                    else array[i, j] = even + 1;
+                    Console.Write("{0}\t", array[i, j]);
+                }
+                Console.WriteLine();
+            }
+            Console.ReadLine();
+        }
+
     }
 }

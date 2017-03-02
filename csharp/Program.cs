@@ -12,8 +12,8 @@ namespace csharp
     {
         static void Main(string[] args)
         {
-            Lesson06Homework hom = new Lesson06Homework();
-            hom.Task03();
+            Lesson06Array hom = new Lesson06Array();
+            hom.Task05();
 
              
             //ArrayLesson ara = new ArrayLesson();

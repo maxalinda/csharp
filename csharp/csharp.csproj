@@ -52,7 +52,7 @@
     <Compile Include="main\classwork\lesson04\DefineNumber.cs" />
     <Compile Include="main\classwork\lesson06\ArrayLesson.cs" />
     <Compile Include="main\classwork\lesson06\Lesson06Class.cs" />
-    <Compile Include="main\homework\lesson06\Lesson06Homework.cs" />
+    <Compile Include="main\homework\lesson06\Lesson06Array.cs" />
     <Compile Include="main\menus\Leson04Menu.cs" />
     <Compile Include="main\classwork\lesson02\NarrowingCasting.cs" />
     <Compile Include="main\homework\lesson02\PrimitiveConvector.cs" />
