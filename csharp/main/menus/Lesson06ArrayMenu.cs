@@ -1,4 +1,5 @@
-﻿using System;
+﻿using csharp.main.homework.lesson06;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,7 @@ namespace csharp.main.menus
     {
         public static void programMenu()
         {
+            Console.Clear();
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("              NextGen Production v.1.06");
             Console.WriteLine("        Select Home Tak number end press ENTER.");
@@ -39,95 +41,38 @@ namespace csharp.main.menus
             if (menuNumber == "1")
             {
                 Console.Clear();
+                Lesson06Array hom = new Lesson06Array();
+                hom.Task01();
+                programMenu();
 
-            
             }
             else if (menuNumber == "2")
             {
                 Console.Clear();
-                Console.WriteLine("Enter side A Integer");
-                string a = Console.ReadLine();
-                Console.WriteLine("Enter side B Integer");
-                string b = Console.ReadLine();
-                Console.WriteLine("Enter side C Integer");
-                string c = Console.ReadLine();
-
-                TriangleCalculation tri = new TriangleCalculation();
-                string result = tri.isTriangleRightAngled(a, b, c);
-
-                if (result == "WrongData")
-                {
-                    Console.WriteLine("Seems like You type wrong data type. Press Enter to continue.");
-                    Console.ReadLine();
-                    programMenu();
-                }
-                else if (result == "RightAngle")
-                {
-                    Console.WriteLine("Triangle is right-angled");
-                    Console.ReadLine();
-                    programMenu();
-                }
-                else if (result == "NotRightAngle")
-                {
-                    Console.WriteLine("Not right-angled triagle");
-                    Console.ReadLine();
-                    programMenu();
-                }
+                Lesson06Array hom = new Lesson06Array();
+                hom.Task02();
+                programMenu();
             }
             else if (menuNumber == "3")
             {
                 Console.Clear();
-                Console.WriteLine("Enter radius 1 ");
-                string r1 = Console.ReadLine();
-                Console.WriteLine("Enter radius 2 ");
-                string r2 = Console.ReadLine();
-                string result = CircleArea.CalculateBiggerCicleArea(r1, r2);
-
-                if (result == "WrongData")
-                {
-                    Console.WriteLine("Seems like You type wrong data type. Press Enter to continue.");
-                    Console.ReadLine();
-                    programMenu();
-                }
-                else if (result == "Area1")
-                {
-                    Console.WriteLine("Area1 is bigger");
-                    Console.ReadLine();
-                    programMenu();
-                }
-                else if (result == "AreasEqual")
-                {
-                    Console.WriteLine("Area1 is equal to Area2");
-                    Console.ReadLine();
-                    programMenu();
-                }
-                else if (result == "Area2")
-                {
-                    Console.WriteLine("Area2 is bigger");
-                    Console.ReadLine();
-                    programMenu();
-                }
+                Lesson06Array hom = new Lesson06Array();
+                hom.Task03();
+                programMenu();
             }
             else if (menuNumber == "4")
             {
                 Console.Clear();
-                Console.WriteLine("Type radius value: ");
-                string r = Console.ReadLine();
-                double pi = 3.14;
-                double result = CircleRadius.CalculateCicleArea(r, pi);
-
-                if (result == 1.0403)
-                {
-                    Console.WriteLine("Seems like You type wrong data type. Press Enter to continue.");
-                    Console.ReadLine();
-                    programMenu();
-                }
-                else
-                {
-                    Console.WriteLine("Area is " + result);
-                    Console.ReadLine();
-                    Lesson04Menu.programMenu();
-                }
+                Lesson06Array hom = new Lesson06Array();
+                hom.Task04();
+                programMenu();
+            }
+            else if (menuNumber == "5")
+            {
+                Console.Clear();
+                Lesson06Array hom = new Lesson06Array();
+                hom.Task05();
+                programMenu();
             }
             else if (menuNumber == "0")
             {

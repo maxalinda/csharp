@@ -12,21 +12,16 @@ namespace csharp.main.homework.lesson06
         {
             int[] array = new int[10];
             int j = 0;
-
             for (int i = 2; i <= 20; i += 2)
             {
                 array[j] = i;
                 Console.Write(array[j] + " ");
                 j++;
-
             }
-            j = 0;
             Console.WriteLine();
-            for (int i = 2; i <= 20; i += 2)
+            for (int i = 0; i < array.Length; i++)
             {
-                array[j] = i;
-                Console.WriteLine(array[j]);
-                j++;
+                Console.WriteLine(array[i]);
             }
 
             Console.ReadLine();
