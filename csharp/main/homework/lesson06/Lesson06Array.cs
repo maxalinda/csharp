@@ -109,5 +109,27 @@ namespace csharp.main.homework.lesson06
             Console.ReadLine();
         }
 
+        public void Task06()
+        {
+            int[,] array = new int[8, 5];
+            Random r = new Random();
+
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    int even = r.Next(1, 999);
+                    if (even % 2 == 0)
+                    {
+                        array[i, j] = even;
+                    }
+                    else array[i, j] = even + 1;
+                    Console.Write(array[i, j].ToString().PadLeft(6));
+                }
+                Console.WriteLine();
+            }
+            Console.ReadLine();
+        }
+
     }
 }

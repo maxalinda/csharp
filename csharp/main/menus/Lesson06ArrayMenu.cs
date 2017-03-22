@@ -26,7 +26,9 @@ namespace csharp.main.menus
             Console.WriteLine("        == 4. Task 04                            ==");
             Console.WriteLine("        == Create array with 15 random number in range [0 - 999]. Write array in line. After write max and min value of array. ==");
             Console.WriteLine("        == 5. Task 05                            ==");
-            Console.WriteLine("        == Create multi-demension array with 8 strings and 5 column, and with random number in range [10 - 99]. Write array in console. ==");
+            Console.WriteLine("        == Create multi-demension array with 8 strings and 5 column, and with random even number in range [10 - 99]. Write array in console in matrix view. ==");
+            Console.WriteLine("        == 6. Task 06                            ==");
+            Console.WriteLine("        == Create multi-demension array with 8 strings and 5 column, and with random even number in range [1 - 999]. Write array in console in matrix view and right justified. ==");
             Console.WriteLine("        == 0. Exit                               ==");
             Console.WriteLine("        ===========================================");
 
@@ -72,6 +74,13 @@ namespace csharp.main.menus
                 Console.Clear();
                 Lesson06Array hom = new Lesson06Array();
                 hom.Task05();
+                programMenu();
+            }
+            else if (menuNumber == "6")
+            {
+                Console.Clear();
+                Lesson06Array hom = new Lesson06Array();
+                hom.Task06();
                 programMenu();
             }
             else if (menuNumber == "0")
