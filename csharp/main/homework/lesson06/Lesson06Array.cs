@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace csharp.main.homework.lesson06
@@ -129,6 +130,40 @@ namespace csharp.main.homework.lesson06
                 Console.WriteLine();
             }
             Console.ReadLine();
+        }
+
+        public void Task07()
+        {
+            List<int> myList = new List<int>();
+            Regex reg = new Regex("^[0-9]*$");
+
+            bool exit = false;
+
+            while (!exit)
+            {
+                Console.Clear();
+                Console.WriteLine("Type any Integer number Or Type \"Exit\" to close.");
+
+                string typeValue = Console.ReadLine();
+                if (typeValue == "Exit")
+                {
+                    exit = true;
+                }
+                else if (reg.IsMatch(typeValue))
+                {
+                    myList.Add(Convert.ToInt32(typeValue));
+                }
+                else
+                {
+                    Console.WriteLine("You type wrong value try again. Press Enter to continue.");
+                    Console.ReadLine();
+                }
+            }
+
+            Console.WriteLine("All numbers in array: " + string.Join(", ", myList));
+            Console.WriteLine("Sum of all elemets: " + myList.Sum());
+            Console.ReadLine();
+
         }
 
     }

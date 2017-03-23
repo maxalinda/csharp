@@ -29,6 +29,8 @@ namespace csharp.main.menus
             Console.WriteLine("        == Create multi-demension array with 8 strings and 5 column, and with random even number in range [10 - 99]. Write array in console in matrix view. ==");
             Console.WriteLine("        == 6. Task 06                            ==");
             Console.WriteLine("        == Create multi-demension array with 8 strings and 5 column, and with random even number in range [1 - 999]. Write array in console in matrix view and right justified. ==");
+            Console.WriteLine("        == 7. Task 07                            ==");
+            Console.WriteLine("        == Ask User to type Int numbers till he wrote Exit to stop. After Write in Console all numbers with comma, and then Sum of it.==");
             Console.WriteLine("        == 0. Exit                               ==");
             Console.WriteLine("        ===========================================");
 
@@ -81,6 +83,13 @@ namespace csharp.main.menus
                 Console.Clear();
                 Lesson06Array hom = new Lesson06Array();
                 hom.Task06();
+                programMenu();
+            }
+            else if (menuNumber == "7")
+            {
+                Console.Clear();
+                Lesson06Array hom = new Lesson06Array();
+                hom.Task07();
                 programMenu();
             }
             else if (menuNumber == "0")
