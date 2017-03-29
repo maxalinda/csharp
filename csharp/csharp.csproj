@@ -52,11 +52,16 @@
     <Compile Include="main\classwork\lesson04\DefineNumber.cs" />
     <Compile Include="main\classwork\lesson06\ArrayLesson.cs" />
     <Compile Include="main\classwork\lesson06\Lesson06Class.cs" />
+    <Compile Include="main\classwork\lesson07\StringLesson.cs" />
+    <Compile Include="main\classwork\lesson08\FilesExeptions.cs" />
     <Compile Include="main\homework\lesson06\Lesson06Array.cs" />
+    <Compile Include="main\homework\lesson07\Lesson07String.cs" />
     <Compile Include="main\menus\Leson04Menu.cs" />
     <Compile Include="main\classwork\lesson02\NarrowingCasting.cs" />
     <Compile Include="main\homework\lesson02\PrimitiveConvector.cs" />
     <Compile Include="main\menus\Lesson06ArrayMenu.cs" />
+    <Compile Include="main\menus\Lesson07StringMenu.cs" />
+    <Compile Include="main\menus\MainMenu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="main\classwork\lesson03\MathFunc.cs" />
