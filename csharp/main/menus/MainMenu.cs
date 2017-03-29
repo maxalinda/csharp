@@ -31,14 +31,17 @@ namespace csharp.main.menus
         {
             if (menuNumber == "1")
             {
+                Console.Clear();
                 Lesson04Menu.programMenu();
             }
             else if (menuNumber == "2")
             {
+                Console.Clear();
                 Lesson06ArrayMenu.programMenu();
             }
             else if (menuNumber == "3")
             {
+                Console.Clear();
                 Lesson07StringMenu.programMenu();
             }
             else if (menuNumber == "0")
