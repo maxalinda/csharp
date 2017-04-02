@@ -14,12 +14,13 @@ namespace csharp.main.menus
             Console.WriteLine("              NextGen Production v.1.03");
             Console.WriteLine("        Select Home Work               ");
             Console.WriteLine("        Menu:");
-            Console.WriteLine("        ===========================================");
-            Console.WriteLine("        == 1. Lesson 04 Homework                 ==");
-            Console.WriteLine("        == 2. Lesson 06 Array Homework           ==");
-            Console.WriteLine("        == 3. Lesson 07 String Homework          ==");
-            Console.WriteLine("        == 0. Exit                               ==");
-            Console.WriteLine("        ===========================================");
+            Console.WriteLine("        ============================================");
+            Console.WriteLine("        == 1. Lesson 04 Homework                  ==");
+            Console.WriteLine("        == 2. Lesson 06 Array Homework            ==");
+            Console.WriteLine("        == 3. Lesson 07 String Homework           ==");
+            Console.WriteLine("        == 4. Lesson 08 Files/Extentions Homework ==");
+            Console.WriteLine("        == 0. Exit                                ==");
+            Console.WriteLine("        ============================================");
 
             string menuNumber = Console.ReadLine();
 
@@ -43,6 +44,11 @@ namespace csharp.main.menus
             {
                 Console.Clear();
                 Lesson07StringMenu.programMenu();
+            }
+            else if (menuNumber == "4")
+            {
+                Console.Clear();
+                Lesson08FilesMenu.programMenu();
             }
             else if (menuNumber == "0")
             {

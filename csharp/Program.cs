@@ -3,6 +3,7 @@ using csharp.main.classwork.lesson07;
 using csharp.main.classwork.lesson08;
 using csharp.main.homework.lesson06;
 using csharp.main.homework.lesson07;
+using csharp.main.homework.lesson08;
 using csharp.main.menus;
 using System;
 using System.Collections.Generic;
@@ -19,8 +20,8 @@ namespace csharp
             //FilesExeptions.TextReader();
             //FilesExeptions.ShowNumber();
 
-
-           MainMenu.programMenu();
+            //Lesson08FilesExeptions.Task03();
+            MainMenu.programMenu();
             
 
         }
