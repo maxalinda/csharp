@@ -54,15 +54,22 @@
     <Compile Include="main\classwork\lesson06\Lesson06Class.cs" />
     <Compile Include="main\classwork\lesson07\StringLesson.cs" />
     <Compile Include="main\classwork\lesson08\FilesExeptions.cs" />
+    <Compile Include="main\classwork\lesson09\Bicycle.cs" />
+    <Compile Include="main\classwork\lesson09\Student.cs" />
+    <Compile Include="main\classwork\lesson10\Person.cs" />
+    <Compile Include="main\classwork\lesson10\Students.cs" />
     <Compile Include="main\homework\lesson06\Lesson06Array.cs" />
     <Compile Include="main\homework\lesson07\Lesson07String.cs" />
     <Compile Include="main\homework\lesson08\Lesson08FilesExeptions.cs" />
+    <Compile Include="main\homework\lesson09\Human.cs" />
+    <Compile Include="main\homework\lesson09\WhiteCollar.cs" />
     <Compile Include="main\menus\Leson04Menu.cs" />
     <Compile Include="main\classwork\lesson02\NarrowingCasting.cs" />
     <Compile Include="main\homework\lesson02\PrimitiveConvector.cs" />
     <Compile Include="main\menus\Lesson06ArrayMenu.cs" />
     <Compile Include="main\menus\Lesson07StringMenu.cs" />
     <Compile Include="main\menus\Lesson08FilesMenu.cs" />
+    <Compile Include="main\menus\Lesson09OOPBasicsMenu.cs" />
     <Compile Include="main\menus\MainMenu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -97,6 +104,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

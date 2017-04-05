@@ -19,6 +19,7 @@ namespace csharp.main.menus
             Console.WriteLine("        == 2. Lesson 06 Array Homework            ==");
             Console.WriteLine("        == 3. Lesson 07 String Homework           ==");
             Console.WriteLine("        == 4. Lesson 08 Files/Extentions Homework ==");
+            Console.WriteLine("        == 5. Lesson 09 OOP Basics                ==");
             Console.WriteLine("        == 0. Exit                                ==");
             Console.WriteLine("        ============================================");
 
@@ -49,6 +50,11 @@ namespace csharp.main.menus
             {
                 Console.Clear();
                 Lesson08FilesMenu.programMenu();
+            }
+            else if (menuNumber == "5")
+            {
+                Console.Clear();
+                Lesson09OOPBasicsMenu.programMenu();
             }
             else if (menuNumber == "0")
             {
