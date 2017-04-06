@@ -12,6 +12,7 @@ namespace csharp.main.homework.lesson09
         private string companyName;
         public string CompanyName
         {
+            get { return this.companyName;}
             set
             {
                 if (Regex.IsMatch(value, @"^[A-z,a-z \s-]+$"))

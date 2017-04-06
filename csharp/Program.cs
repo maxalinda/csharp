@@ -3,6 +3,7 @@ using csharp.main.classwork.lesson07;
 using csharp.main.classwork.lesson08;
 using csharp.main.classwork.lesson09;
 using csharp.main.classwork.lesson10;
+using csharp.main.classwork.lesson11;
 using csharp.main.homework.lesson06;
 using csharp.main.homework.lesson07;
 using csharp.main.homework.lesson08;
@@ -20,7 +21,14 @@ namespace csharp
         static void Main(string[] args)
         {
 
-            MainMenu.programMenu();
+            Result r = new Result();
+            r.DrawLine();
+            //Students stu = new Students("Max", "Kiev", "Ukraine", "Finance");
+
+            //Console.WriteLine(stu.GetName() + " " + stu.GetCity() + " " + stu.GetUnivercity() + " " + stu.GetFaculty());
+            //Console.ReadLine();
+            
+            //MainMenu.programMenu();
 
             //Bicycle bicycle = new Bicycle("Shimano Ultegra", 28);
             //bicycle.Ride(); 

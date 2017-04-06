@@ -58,6 +58,9 @@
     <Compile Include="main\classwork\lesson09\Student.cs" />
     <Compile Include="main\classwork\lesson10\Person.cs" />
     <Compile Include="main\classwork\lesson10\Students.cs" />
+    <Compile Include="main\classwork\lesson11\Line.cs" />
+    <Compile Include="main\classwork\lesson11\Pixel.cs" />
+    <Compile Include="main\classwork\lesson11\Result.cs" />
     <Compile Include="main\homework\lesson06\Lesson06Array.cs" />
     <Compile Include="main\homework\lesson07\Lesson07String.cs" />
     <Compile Include="main\homework\lesson08\Lesson08FilesExeptions.cs" />
