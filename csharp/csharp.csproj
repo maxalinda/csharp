@@ -12,6 +12,8 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -39,12 +41,21 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="WebDriver, Version=3.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.3.3.0\lib\net40\WebDriver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.3.3.0\lib\net40\WebDriver.Support.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="main\classwork\lesson04\CircleArea.cs" />
@@ -59,8 +70,12 @@
     <Compile Include="main\classwork\lesson10\Person.cs" />
     <Compile Include="main\classwork\lesson10\Students.cs" />
     <Compile Include="main\classwork\lesson11\Line.cs" />
+    <Compile Include="main\classwork\lesson11\Person.cs" />
     <Compile Include="main\classwork\lesson11\Pixel.cs" />
     <Compile Include="main\classwork\lesson11\Result.cs" />
+    <Compile Include="main\classwork\lesson11\Result2.cs" />
+    <Compile Include="main\classwork\lesson11\Student.cs" />
+    <Compile Include="main\classwork\lesson11\Teacher.cs" />
     <Compile Include="main\homework\lesson06\Lesson06Array.cs" />
     <Compile Include="main\homework\lesson07\Lesson07String.cs" />
     <Compile Include="main\homework\lesson08\Lesson08FilesExeptions.cs" />
@@ -89,6 +104,13 @@
     <Compile Include="test\homework\lesson02\PrimitiveConvectorTests.cs" />
     <Compile Include="main\classwork\lesson04\TriangleCalculation.cs" />
     <Compile Include="main\classwork\lesson02\WideningCasting.cs" />
+    <Compile Include="test\webdriver\BaseTest.cs" />
+    <Compile Include="test\webdriver\tests\massagePageObject\pages\AbstractPage.cs" />
+    <Compile Include="test\webdriver\tests\massagePageObject\pages\FormPage.cs" />
+    <Compile Include="test\webdriver\tests\massagePageObject\pages\ThankYouPage.cs" />
+    <Compile Include="test\webdriver\tests\massagePageObject\tests\BaseTest.cs" />
+    <Compile Include="test\webdriver\tests\massagePageObject\tests\MassageTherapyRegistrationSmokeTestsPO.cs" />
+    <Compile Include="test\webdriver\tests\massage\MassageTherapyRegistrationSmokeTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -109,6 +131,13 @@
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Selenium.Firefox.WebDriver.0.15.0\build\Selenium.Firefox.WebDriver.targets" Condition="Exists('..\packages\Selenium.Firefox.WebDriver.0.15.0\build\Selenium.Firefox.WebDriver.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Selenium.Firefox.WebDriver.0.15.0\build\Selenium.Firefox.WebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.Firefox.WebDriver.0.15.0\build\Selenium.Firefox.WebDriver.targets'))" />
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

@@ -20,9 +20,13 @@ namespace csharp
     {
         static void Main(string[] args)
         {
+            Result2 res = new Result2();
+            res.Result();
+            Console.ReadLine();
 
-            Result r = new Result();
-            r.DrawLine();
+
+            //Result r = new Result();
+            //r.DrawLine();
             //Students stu = new Students("Max", "Kiev", "Ukraine", "Finance");
 
             //Console.WriteLine(stu.GetName() + " " + stu.GetCity() + " " + stu.GetUnivercity() + " " + stu.GetFaculty());
